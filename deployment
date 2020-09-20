@@ -1,4 +1,4 @@
 #!/bin/bash
 
-kubectl apply -f deploymen-prod.yml --namespace production
+kubectl apply -f deployment-prod.yml --namespace production
 kubectl apply -f configmap.yml --namespace production
