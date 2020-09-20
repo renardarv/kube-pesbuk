@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: social-media
-        image: renardarv/pesbuk:buildnumber 
+        image: renardarv/pesbuk-stag:buildnumber 
         ports:
         - containerPort: 8080
         env:
