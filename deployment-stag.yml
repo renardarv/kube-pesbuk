@@ -30,29 +30,29 @@ spec:
     spec:
       containers:
       - name: social-media
-        image: renardarv/pesbuk:1.0 
+        image: renardarv/pesbuk:buildnumber 
         ports:
         - containerPort: 8080
         env:
         - name: DB_HOST
           valueFrom:
             secretKeyRef:
-              name: p-secret-fb
+              name: s-secret
               key: DB_HOST
         - name: DB_USER
           valueFrom:
             secretKeyRef:
-              name: p-secret-fb
+              name: s-secret
               key: DB_USER
         - name: DB_PASS
           valueFrom:
             secretKeyRef:
-              name: p-secret-fb
+              name: s-secret
               key: DB_PASS
         - name: DB_NAME
           valueFrom:
             secretKeyRef:
-              name: p-secret-fb
+              name: s-secret
               key: DB_NAME
         volumeMounts:
         - name: config
