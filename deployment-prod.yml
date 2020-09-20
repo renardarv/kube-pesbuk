@@ -71,7 +71,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: pes-prod.renard.my.id 
+  - host: pes.renard.my.id 
     http:
       paths:
       #- path: /
